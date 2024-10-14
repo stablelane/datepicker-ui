@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    margin: 0;
+}
+
+.container {
+    min-width: 600px;
+    max-width: 710px;
+    width: 80%;
+    height: 90vh;
+    border: 3px solid black;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+.next-button,.back-button {
+    height: 12px;
+}
+.back-button {
+    transform: scaleX(-1);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calender {
+    display: flex;
+    flex-direction: column;
+}
+.calender-input {
+    display: flex;
+    margin-bottom: 5px;
+}
+.calender-input img {
+    height: 30px;
+    border: 1px solid black;
+    padding: 5px;
+}
+.calender input {
+    width: 100%;
+    border: 1px solid black;
+}
+.calender-head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    
+}
+.ch-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    padding: 0.5em;
+}
+.ch-head h2 {
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin: 0;
+}
+.ch-footer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.ch-footer p {
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 300;
+    margin: 0;
+}
+.calender-footer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border: 1px solid black;
+    grid-auto-flow: dense;
+}
+.calender-footer p {
+    margin: 0;
+    padding: 7px;
+    font-size: 0.8em;
+    text-align: center;
+    border: 1px solid black;
+}
